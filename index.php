@@ -15,17 +15,12 @@
         initialView: 'listWeek',//dayGridMonth'',''timeGridWeek// 
         timeZone: 'UTC',
         events: [  
-        <?php 
-              $query = "SELECT * FROM mensajes WHERE 1;";
-              $rtdo = mysqli_query($conexion , $query);
-              while($fila = mysqli_fetch_assoc($rtdo) ){ 
-        ?>,
+
           {       
-            id   :'<?php echo $fila['mensaje'];?>',
-            title:'<?php echo $fila['mensaje'];?>',
-            start:'<?php echo $fila['fecha'  ];?>',         
+            id   :'<?php echo 'mensaje'?>',
+            title:'<?php echo 'mensaje 4 de junio PRUEBA'?>',
+            start:'<?php echo '2024/06/04'  ;?>',         
           }
-        <?PHP } ?>
         ]//----------------- EVENTS ------------
 
             });
